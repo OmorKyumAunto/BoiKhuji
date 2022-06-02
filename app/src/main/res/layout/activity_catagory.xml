@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Catagory">
+<!--    Header-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="-10dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibri"
+                android:text="Categories"
+                android:textColor="#FF8F00"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/livechat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/searchicon" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--    index-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/offerbook"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_bk2">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:src="@drawable/categories_shop_icon"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weekly Offer"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black"
+                        android:padding="25dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/foodbook"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/food_back">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:src="@drawable/categories_restaurant_icon"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Food Related Books"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        android:padding="25dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medical"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_bk3">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:src="@drawable/hospital_image"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Books"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        android:padding="25dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:id="@+id/adventurebook"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_bk5">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/advenic"
+                        android:layout_height="110dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Adventure Books"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        android:padding="25dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/storybook"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/food_back">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/food_back">
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/storyic"
+                            android:layout_height="110dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="Story Books"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/white"
+                            android:padding="25dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp">
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    Footer-->
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:layout_width="match_parent"
+        android:id="@+id/bottomNav"
+        android:layout_height="wrap_content"
+        app:mbn_shadowColor="@color/ShadowColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:mbn_circleColor="@color/circleColor"
+
+        app:mbn_backgroundBottomColor="@color/themeColor"
+        app:mbn_countBackgroundColor="@color/CountBackgroundColor"
+        app:mbn_defaultIconColor="@color/defaultIconColor"
+        app:mbn_countTextColor="@color/CountTextColor"
+        app:mbn_selectedIconColor="@color/SelecetedIconColor"
+
+
+        ></com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+</androidx.constraintlayout.widget.ConstraintLayout>
