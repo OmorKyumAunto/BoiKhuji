@@ -1,10 +1,11 @@
-package com.example.boikhuji;
+package com.example.boikhuji.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.boikhuji.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 public class SliderAdapter extends SliderViewAdapter<SliderAdapter.Holder>{

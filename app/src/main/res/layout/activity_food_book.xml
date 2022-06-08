@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".FoodBook">
 
-    tools:context=".OfferBooks">
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/calibri"
-                android:text="Offer Books"
+                android:text="Receipe Books"
                 android:textColor="#FF8F00"
                 android:textSize="35sp"
                 android:textStyle="bold" />

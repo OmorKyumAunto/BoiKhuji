@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#fff"
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 <!--    Header-->
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/livechat"
+                android:id="@+id/search"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="180dp"
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Recently Added"
+        android:text="Offers On Books"
         android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
@@ -102,6 +102,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:background="#F7FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,9 +123,15 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/my_recycler"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+                    android:layout_height="match_parent">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
 
             </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 <!--    top-->
@@ -139,6 +146,43 @@
         android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#F7FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/downrecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 

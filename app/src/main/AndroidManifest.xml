@@ -13,8 +13,56 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BoiKhuji">
         <activity
+            android:name=".ViewOrder"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".SearchPage"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity
+            android:name=".PlaceOrder"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".MyCart"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Storybook"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Adventurebook"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Medicalbook"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".FoodBook"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BookDetails"
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
             android:name=".OfferBooks"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".AgentRegister"
             android:exported="false"
@@ -22,13 +70,19 @@
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".Menu"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".Catagory"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".Ebook"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BoiKhuji.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".Dashboard"
             android:exported="false"

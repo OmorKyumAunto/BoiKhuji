@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Menu extends AppCompatActivity {
     MeowBottomNavigation bottomNav;
-    CardView agentregister;
+    private FirebaseAuth firebaseAuth;
+    CardView vieworder,agentregister,logoutbtn;
 
     private final int ID_Home = 1;
     private final int ID_Events = 2;
@@ -24,6 +26,24 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         bottomNav = findViewById(R.id.bottomNav);
         agentregister=findViewById(R.id.agentreg);
+        logoutbtn=findViewById(R.id.logout);
+        vieworder=findViewById(R.id.viewcart);
+        firebaseAuth = FirebaseAuth.getInstance();
+        vieworder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ViewOrder.class));
+                finish();
+            }
+        });
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firebaseAuth.signOut();
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                finish();
+            }
+        });
         agentregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +54,7 @@ public class Menu extends AppCompatActivity {
 
         bottomNav.add(new MeowBottomNavigation.Model(1,R.drawable.homeic));
         bottomNav.add(new MeowBottomNavigation.Model(2,R.drawable.cateic));
-        bottomNav.add(new MeowBottomNavigation.Model(3,R.drawable.ebookicon));
+        bottomNav.add(new MeowBottomNavigation.Model(3,R.drawable.cartic));
         bottomNav.add(new MeowBottomNavigation.Model(4,R.drawable.menuic));
         bottomNav.setCount(2,"4");
         bottomNav.setOnShowListener(new MeowBottomNavigation.ShowListener() {
@@ -42,14 +62,17 @@ public class Menu extends AppCompatActivity {
             public void onShowItem(MeowBottomNavigation.Model item) {
                 if(item.getId()==1){
                     startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                    finish();
                     return;
                 }
                 else if(item.getId()==2){
                     startActivity(new Intent(getApplicationContext(),Catagory.class));
+                    finish();
                     return;
                 }
                 else if(item.getId()==3){
-                    startActivity(new Intent(getApplicationContext(), Ebook.class));
+                    startActivity(new Intent(getApplicationContext(), MyCart.class));
+                    finish();
                     return;
                 }
                 else if(item.getId()==4){
@@ -72,5 +95,11 @@ public class Menu extends AppCompatActivity {
 
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(getApplicationContext(), Dashboard.class));
+
     }
 }

@@ -9,6 +9,7 @@
     <color name="lightWhite">#f2f5f8</color>
     <color name="white">#fff</color>
     <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
 
     <color name="themeColor">#11CFC5</color>
 

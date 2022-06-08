@@ -1,4 +1,4 @@
-package com.example.boikhuji;
+package com.example.boikhuji.Model;
 
 public class Agent {
 

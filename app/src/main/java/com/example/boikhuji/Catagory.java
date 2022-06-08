@@ -6,11 +6,13 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
 public class Catagory extends AppCompatActivity {
     MeowBottomNavigation bottomNav;
+    ImageView search;
     CardView offer,food,medical,adventure,story;
 
 
@@ -29,16 +31,53 @@ public class Catagory extends AppCompatActivity {
         medical=findViewById(R.id.medical);
         adventure=findViewById(R.id.adventurebook);
         story=findViewById(R.id.storybook);
+        search=findViewById(R.id.catsearch);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),SearchPage.class));
+                finish();
+            }
+        });
         offer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getApplicationContext(),OfferBooks.class));
+                finish();
+            }
+        });
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), FoodBook.class));
+                finish();
+            }
+        });
+        medical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Medicalbook.class));
+                finish();
+            }
+        });
+        adventure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Adventurebook.class));
+                finish();
+            }
+        });
+        story.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Storybook.class));
+                finish();
             }
         });
 
         bottomNav.add(new MeowBottomNavigation.Model(1,R.drawable.homeic));
         bottomNav.add(new MeowBottomNavigation.Model(2,R.drawable.cateic));
-        bottomNav.add(new MeowBottomNavigation.Model(3,R.drawable.ebookicon));
+        bottomNav.add(new MeowBottomNavigation.Model(3,R.drawable.cateic));
         bottomNav.add(new MeowBottomNavigation.Model(4,R.drawable.menuic));
 
 
@@ -49,6 +88,7 @@ public class Catagory extends AppCompatActivity {
             public void onShowItem(MeowBottomNavigation.Model item) {
                 if(item.getId()==1){
                     startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                    finish();
                     return;
                 }
                 else if(item.getId()==2){
@@ -56,11 +96,13 @@ public class Catagory extends AppCompatActivity {
                     return;
                 }
                 else if(item.getId()==3){
-                    startActivity(new Intent(getApplicationContext(), Ebook.class));
+                    startActivity(new Intent(getApplicationContext(), MyCart.class));
+                    finish();
                     return;
                 }
                 else if(item.getId()==4){
                     startActivity(new Intent(getApplicationContext(),Menu.class));
+                    finish();
                     return;
                 }
                 return;
@@ -79,5 +121,12 @@ public class Catagory extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(getApplicationContext(), Dashboard.class));
+
     }
 }

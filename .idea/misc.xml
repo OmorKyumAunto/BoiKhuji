@@ -3,23 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable-v24/backbutton.xml" value="0.15" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable/button_background_blue.xml" value="0.1455" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable/gradient.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable/grey_bcakground.xml" value="0.143" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable/grey_cursor_color.xml" value="0.102" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable/ic_back_img.xml" value="0.1455" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/drawable/white_btn.xml" value="0.143" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/font/montserrat_bold.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_adventurebook.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_agent_register.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_book_details.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_catagory.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_dashboard.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_ebook.xml" value="0.1859375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_food_book.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_food_books.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_medicalbook.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_menu.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_my_cart.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_offer_books.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_place_order.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_profile.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_receipebooks.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_register.xml" value="0.2" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_splash_screen.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_search_page.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_storybook.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/activity_view_order.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/dashrecyle.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/gradient.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/horicard.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/itemdesign.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/my_cart_item.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/orderstatuscard.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/layout/slider_item.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/BoiKhuji/app/src/main/res/menu/searchmenu.xml" value="0.22" />
       </map>
     </option>
   </component>

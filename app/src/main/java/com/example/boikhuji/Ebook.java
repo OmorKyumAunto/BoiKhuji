@@ -64,4 +64,11 @@ public class Ebook extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(getApplicationContext(), Dashboard.class));
+        finish();
+
+    }
 }

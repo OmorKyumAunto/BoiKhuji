@@ -4,62 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".OfferBooks">
+    tools:context=".ViewOrder">
+<!--    header-->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="-10dp"
         android:foregroundGravity="center"
         app:cardCornerRadius="12dp"
+        android:layout_marginTop="-10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/linear2"
             android:layout_marginStart="10dp"
             android:layout_marginTop="12dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/calibri"
+                android:text="Order"
+                android:textColor="#707070"
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/calibri"
-                android:text="Offer Books"
+                android:text=" Status"
                 android:textColor="#FF8F00"
                 android:textSize="35sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
-
-    <ScrollView
+<!--  view  -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
+            android:layout_height="wrap_content">
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recview"
-
-                android:layout_marginBottom="60dp"
+                android:id="@+id/viewrec"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
+                android:layout_height="wrap_content">
 
-    </ScrollView>
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
 
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
